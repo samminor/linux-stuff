@@ -1,0 +1,4 @@
+Host vbox-centos7
+    HostName ww.xx.yy.zz
+    ForwardX11 yes
+    FOrwardX11Trusted yes

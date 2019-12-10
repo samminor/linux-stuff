@@ -23,5 +23,8 @@ set exrc
 " :vmap <F7> "*y
 " :map <S-F7> :r!xclip -o<CR>
 
+" Hit F5 to eliminate trailing whitespaces
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
-inoremap jj <ESC>
+
+" To see code below during search
+set scrolloff=3
