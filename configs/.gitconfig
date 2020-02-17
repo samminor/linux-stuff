@@ -3,3 +3,5 @@
 	email = i.potseluev@polytech.software.com
 [gc]
 	autoDetach = false
+[core]
+	editor = vim

@@ -1,0 +1,2 @@
+1. sudo aptitude remove unattended-updates
+2. sudo aptitude install vim-gtk xclip
