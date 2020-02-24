@@ -1,0 +1,9 @@
+If you want to use different shortcut to switch between workspaces:
+
+1) install dconf-editor
+2) goto org.gnome.desktop.wm.keybindings
+switch-to-workspace-[down, up, left, right]
+move-to-workspace-[down, up, left, right]
+
+Source:
+https://askubuntu.com/questions/1099107/18-04-change-shortcut-for-switching-workspace

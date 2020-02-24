@@ -1,0 +1,9 @@
+Problem: Alt-Tab doesn't switch to another window. Double Alt-Tab is necessary
+
+Solution:
+https://askubuntu.com/questions/1036248/how-to-separate-opened-windows-in-alttab-switcher-in-ubuntu-18-04
+
+You should 
+- go to settings->Devices->keyboard
+- unset alt-tab for Switch applications
+- set alt-tab bor Switch windows
