@@ -1,0 +1,5 @@
+- install askpass
+yum install openssh-askpass
+
+- add line to /etc/sudo.conf
+Path askpass /usr/libexec/openssh/ssh-askpass

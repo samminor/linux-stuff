@@ -1,0 +1,12 @@
+- install xclip from EPEL repo
+- enable ssh X11 forwarding
+$ sudo yum install xorg-x11-xauth
+
+- install xclip
+- add to .bashrc:
+alias xclip="xclip -selection clipboard"
+
+- install vim-X11 to enable X11 clipboard in vim
+$ sudo yum install vim-X11
+add to .bashrc:
+alias vim=vimx
