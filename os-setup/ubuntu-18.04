@@ -1,2 +1,7 @@
 1. sudo aptitude remove unattended-updates
 2. sudo aptitude install vim-gtk xclip
+
+- - -
+Problem with intermittent network fail:
+cd /etc
+sudo ln -sf ../run/systemd/resolve/resolv.conf resolv.conf
