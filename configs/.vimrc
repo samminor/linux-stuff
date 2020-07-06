@@ -27,7 +27,7 @@ set exrc
 :nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 " To see code below during search
-set scrolloff=3
+set scrolloff=2
 
 " Hexmode
 nnoremap <C-H> :Hexmode<CR>
