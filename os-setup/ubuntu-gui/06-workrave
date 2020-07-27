@@ -1,0 +1,18 @@
+https://askubuntu.com/questions/967264/how-to-get-workrave-indicator-to-show-in-ubuntu-17-10/967425#967425
+
+First, you'll need gnome-tweak-tool for being able to enable this.
+
+sudo apt install gnome-tweak-tool
+Second, the Workrave package in the official repo is badly packaged (it brings down some XFCE dependencies that mess up your Gnome session), so you'll have to install the workrave-gnome package from Rob Caeler's PPA.
+
+sudo add-apt-repository -u ppa:rob-caelers/workrave
+Now you can do:
+
+sudo apt install workrave-gnome
+Now fire up Workrave. It will show up in a small window with all the timers running -- no applet yet.
+
+Then fire up gnome-tweak-tool, head to Extensions, and enable Workrave.
+
+Now the applet (and/or the tray icon, if you're using it) should be visible in the top panel.
+
+One more thing I've noticed on my machine is that Workrave segfaults under Wayland, so you will probably have to login into xorg if you want to use Workrave.
