@@ -1,0 +1,14 @@
+bridge added to /etc/network/interfaces makes polytech vpn useless. You should add it through network manager
+https://www.cyberciti.biz/faq/ubuntu-20-04-add-network-bridge-br0-with-nmcli-command
+
+copy-paste:
+Open the Terminal app or log in using the [nixmcd name=”ssh”]
+Find out information about the current Ubuntu network connection:
+$ sudo nmcli con show
+Then, add a new bridge called br0:
+$ sudo nmcli con add type bridge ifname br0
+Create a slave interface for br0 using enp0s31f6:
+$ sudo nmcli con add type bridge-slave ifname enp0s31f6 master br0
+Turn on br0 interface to get an IP via DHCP:
+$ sudo nmcli con up br0
+Static IP settings are discussed below for the br0 interface

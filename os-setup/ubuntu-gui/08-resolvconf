@@ -1,0 +1,2 @@
+default link:
+resolv.conf -> /run/systemd/resolve/resolv.conf

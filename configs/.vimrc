@@ -4,6 +4,9 @@ set expandtab
 set smarttab
 set cindent
 
+"prevent indentation on # comment
+set cindent cinkeys-=0#
+
 " Turn off tabs for makefiles
 autocmd FileType make setlocal noexpandtab
 "autocmd FileType make setlocal shiftwidth=8

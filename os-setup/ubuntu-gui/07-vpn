@@ -1,0 +1,3 @@
+ubuntu 20.04 gnome:
+- disable PFS in ipsec settings
+https://community.checkpoint.com/t5/Remote-Access-VPN/L2TP-over-IPSec-Linux-VPN/td-p/48860
