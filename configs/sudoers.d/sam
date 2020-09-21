@@ -1,0 +1,2 @@
+sam ALL = NOPASSWD: /usr/bin/vim /etc/hosts
+sam ALL = NOPASSWD: /sbin/poweroff
