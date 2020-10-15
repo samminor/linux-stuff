@@ -1,0 +1,6 @@
+1. sudo aptitude remove unattended-updates
+2. sudo aptitude install vim-gtk xclip
+3. set hostname:
+sudo hostname new-server-name-here
+sudo vim /etc/hostname
+sudo vim /etc/hosts

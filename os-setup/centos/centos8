@@ -1,0 +1,19 @@
+1) xclip
+1.1) install xclip
+# dnf group install 'Development tools'
+sudo yum install libXmu-devel libX11-devel
+git clone https://github.com/astrand/xclip.git
+./bootstrap
+./configure
+make
+make install
+
+2) set hostname
+sudo vim /etc/hostname
+sudo hostname HOSTNAME
+
+3) set locale
+$ locale
+Error "Failed to set locale, defaulting to C.UTF-8"
+$ localectl set-locale LANG=en_US.UTF-8
+$ sudo yum install glibc-all-langpacks

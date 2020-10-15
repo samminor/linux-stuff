@@ -11,6 +11,8 @@ $ sudo yum install vim-X11
 add to .bashrc:
 alias vim=vimx
 
+?? Are you sure X11Forwarding is enabled ??
+
 I. This requires reboot
 Problem: /usr/bin/xauth:  file /home/sam/.Xauthority does not exist
 # Rename the existing .Xauthority file by running the following command
