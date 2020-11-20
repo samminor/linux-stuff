@@ -8,3 +8,5 @@ alias xclip="xclip -selection clipboard"
 export PATH="/usr/lib/ccache:$PATH"
 
 export EDITOR="vim"
+# centos only:
+# alias vim=vimx

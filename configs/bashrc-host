@@ -1,0 +1,25 @@
+HISTSIZE=20000
+HISTFILESIZE=30000
+
+alias cdnas='cd ~/workspace/twinz/nas'
+alias cdsamba='cd ~/workspace/twinz/samba_vfs/samba'
+alias cdvfs='cd ~/workspace/twinz/samba_vfs'
+alias cdpkg='cd ~/workspace/twinz/nas_packaging'
+alias cdgithub='cd ~/workspace/github'
+alias cdtoday='cd /mnt/hdd-home/home/Desktop/today'
+
+alias bark='paplay --volume=50000 /usr/share/sounds/gnome/default/alerts/bark.ogg'
+alias xclip="xclip -selection clipboard"
+alias code='code-insiders . && exit'
+
+export PATH="/usr/lib/ccache:$PATH"
+
+export EDITOR="vim"
+# centos only:
+# alias vim=vimx
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
+export VAGRANT_DEFAULT_PROVIDER=libvirt

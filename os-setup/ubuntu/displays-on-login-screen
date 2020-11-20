@@ -1,0 +1,18 @@
+https://itectec.com/ubuntu/ubuntu-ubuntu-18-04-login-screen-display-settings/
+Q:
+On Ubuntu 18.04, I have connected my laptop to an external display and I am able to set the external display as primary and external display only mode. But when I turn on my laptop or log out from my session the display login screen is displayed only on my(internal) laptop screen. But once I login the display switches to external only and my laptop screen turns off as expected.
+
+Is there a way I can make the login screen appear only on the external screen on bootup or on logout as in 16.04? Also the login screen does not follow my cursor as in 16.04.
+
+A:
+This is a known and reported bug with gdm3. The current workaround appears to be:
+
+Go into Settings > Devices > Displays and configure your monitors the way you want for your login screen (in your case, internal laptop display disabled). Click the "Save" button when done.
+Copy your user's monitors.xml file into the home folder for gdm user.
+To copy the monitors.xml file, open a terminal and perform the following:
+
+sudo cp ~/.config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown gdm:gdm ~gdm/.config/monitors.xml
+Then, reboot and see if your changes persist. If this doesn't work, try going through the whole process again. It took me two times in order to get it to stick. I was also able to reboot with my external display disconnected and it switched back to my internal laptop display. I rebooted again and reconnected it and it switches back to my external monitor.
+
+Hope this helps!

@@ -1,0 +1,9 @@
+Error: locale::facet::_S_create_c_locale name not valid
+resolution:
+
+$ sudo dpkg-reconfigure locales
+choose en_US.UTF-8 UTF-8, then - en_US.UTF-8
+
+also maybe:
+$ sudo apt-get install locale-all
+$ sudo locale-gen.
