@@ -1,4 +1,0 @@
-1) clipboard in vim:
-sudo yum install vim-X11
-add to bashrc:
-alias vim=vimx

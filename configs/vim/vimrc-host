@@ -3,7 +3,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/sam/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -20,11 +20,13 @@ let g:vim_markdown_folding_disabled = 1
 set tabstop=4
 set shiftwidth=4
 set expandtab
-" set smarttab
+set smarttab
 " set cindent
 
 " Prevent indentation on # comment
 set cindent cinkeys-=0#
+" Disablel automatic omment insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Turn off tabs for makefiles
 autocmd FileType make setlocal noexpandtab

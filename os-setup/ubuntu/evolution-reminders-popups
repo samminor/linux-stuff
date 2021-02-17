@@ -1,0 +1,5 @@
+In the file /etc/xdg/autostart/org.gnome.Evolution-alarm-notify.desktop 
+I changed the line
+OnlyShowIn=GNOME;Unity;XFCE;Dawati;MATE;
+to
+NotShowIn=GNOME;
