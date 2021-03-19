@@ -79,5 +79,3 @@ function ToggleHex()
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
 endfunction
-
-export EDITOR="vim"

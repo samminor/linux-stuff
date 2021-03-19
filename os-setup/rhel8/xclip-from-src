@@ -1,0 +1,11 @@
+# Obtain the sourcecode
+git clone https://github.com/astrand/xclip.git
+./bootstrap
+./configure
+make
+make install
+
+
+dependencies for configure:
+- configure: error: *** X11/Xmu/Atoms.h is missing ***
+libXmu-devel

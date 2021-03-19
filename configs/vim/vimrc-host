@@ -48,9 +48,10 @@ set exrc
 set scrolloff=2
 
 " Hexmode
-nnoremap <C-H> :Hexmode<CR>
-inoremap <C-H> <Esc>:Hexmode<CR>
-vnoremap <C-H> :<C-U>Hexmode<CR>
+" These shortcuts are quite annoying
+" nnoremap <C-H> :Hexmode<CR>
+" inoremap <C-H> <Esc>:Hexmode<CR>
+" vnoremap <C-H> :<C-U>Hexmode<CR>
 
 " ex command for toggling hex mode - define mapping if desired
 command -bar Hexmode call ToggleHex()
@@ -94,3 +95,16 @@ function ToggleHex()
   let &readonly=l:oldreadonly
   let &modifiable=l:oldmodifiable
 endfunction
+
+" Highlight trailing spaces
+if has("syntax") && (&t_Co > 2 || has("gui_running"))
+  syntax on
+  function! ActivateInvisibleCharIndicator()
+  	syntax match TrailingSpace "[ \t]\+$" display containedin=ALL
+  	highlight TrailingSpace ctermbg=Red
+  endf
+  autocmd BufNewFile,BufRead * call ActivateInvisibleCharIndicator()
+endif
+" Show tabs, trailing whitespace, and continued lines visually
+set list listchars=tab:»·,trail:·,extends:…
+
